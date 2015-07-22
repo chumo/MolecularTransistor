@@ -1,0 +1,206 @@
+		h1 {
+			margin: 0 auto;
+  			max-width: 700px;
+  			font-size:300%;
+  			font-family:Helvetica;
+		}
+
+		#author {
+			position:absolute;
+			margin: 0px;
+			top:10px;
+			left: 10px;
+			font-size: 20px;
+		}
+
+		#author a {
+			text-decoration: none;
+			color:black;
+		}
+
+		#fullApp {
+ 			margin: 0 auto;
+ 			position: relative;
+		}
+		#divDiamond {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			background: whiteSmoke;
+		}
+		#divEnergies {
+ 			position:absolute;
+ 			top:0;
+ 			right:0;
+ 			background: white;/*#E6DDE2;*/
+		}
+		#divPmap {
+ 			position:absolute;
+ 			top:0;
+ 			left:0;
+ 			background: white;
+		}
+		#divScene {
+ 			position:absolute;
+ 			top:0;
+ 			left:0;
+ 			background: white;
+		}
+
+		.axis path,
+		.axis line {
+    		fill: none;
+    		stroke: black;
+    		stroke-width:1px;
+    		shape-rendering: crispEdges;
+		}
+
+		.axis text {
+    		font-family: sans-serif;
+    		font-size: 11px;
+		}
+
+		.axisLabel {
+			text-anchor: middle;
+			font-family: sans-serif;
+    		font-size: 14px;
+		}
+
+		.graphTitle {
+			text-anchor: middle;
+			font-family: sans-serif;
+    		font-size: 24px;
+		}
+	
+		.vacancy {
+			fill: red;	
+			stroke: rgba(0,0,0,0); /* Make it transparent */
+			stroke-width: 6px; /* Make it big to be able to select it even when click is not exactly on the circle */	
+		}
+
+		.adatom {
+			fill: url(#adatomGradient);/*white;*/
+			stroke: black;
+			stroke-width: 0.5px;	
+		}
+
+		.profile {
+  			fill: none;
+  			stroke: blue;
+  			stroke-width: 1.5px;
+		}
+
+		.well {
+			stroke: #666666;
+			stroke-width: 1px;
+			fill: silver;
+		}
+
+		.FLevel {
+			stroke: blue;
+			stroke-width: 5px;
+			shape-rendering: crispEdges;
+		}
+
+		.ELevel {
+			stroke: purple;
+			stroke-width: 4px;
+		}
+		
+		.electron {
+			fill: #15791C;
+			stroke-width: 0px;
+			opacity: 0.7;
+		}
+
+		.cone {
+			fill: #9FD7A2;
+			stroke-width: 1px;
+			stroke: purple;
+			opacity: 0.5;
+		}
+
+		.coneLabel {
+			text-anchor: middle;
+			font-family: sans-serif;
+    		font-size: 14px;
+		}
+
+		.chargeText {
+			text-anchor: middle;
+			font-family: sans-serif;
+			fill:purple;
+    		font-size: 30px;
+		}
+
+		.mask {
+			fill: white;
+			stroke-width: 0px;
+		}
+
+		.maskDiamonds {
+			fill: white;
+			stroke-width: 0px;
+		}
+
+		#biasLine {
+			stroke: red;
+			stroke-width: 5px;
+			opacity: 0.5;
+		}
+
+		#biasTriangle {
+			fill: blue;
+			stroke-width: 0px;
+		}
+
+		.frame {
+			fill: none;
+			stroke: black;
+    		stroke-width:1px;
+    		shape-rendering: crispEdges;
+		}
+		.helpButton {
+			margin: 5px auto;
+			width: 100px;
+			height: 25px;
+			border: 2px solid black;
+			-moz-border-radius: 12px;
+			-webkit-border-radius: 12px;
+			border-radius: 6px;
+			background: #e5caca;
+			font: 20px/25px "Helvetica";
+			cursor: pointer;
+		}
+		.toggleButton {
+			position:absolute;
+ 			top:232px;
+ 			left:262px;
+			width: 120px;
+			height: 14px;
+			border: 2px solid black;
+			-moz-border-radius: 12px;
+			-webkit-border-radius: 12px;
+			border-radius: 6px;
+			background: #e5caca;
+			font: 12px/16px "Helvetica";
+			cursor: pointer;
+			text-align: center;
+		}
+
+		.pointer {
+			stroke: orange;
+			stroke-width: 10px;
+			fill: none;
+			opacity: 0.5;
+		}
+
+		.pointerLabel {
+			text-anchor: middle;
+			font-family: sans-serif;
+    		font-size: 50px;
+    		fill:orange;
+		}
+
+
+		

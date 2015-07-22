@@ -1,0 +1,61 @@
+//The PcMolecule could have been implemented this other way:
+
+	var PcMolecule = d3.select('div#PcMolecule');
+
+	// drag behavior for the molecule
+	var dragMolecule = d3.behavior.drag()
+    	.on("drag", function() {
+  			var x = d3.event.x;
+  			var y = d3.event.y;
+
+  			d3.select(this).style('transform','translate('+x+'px,'+y+'px)');
+			}
+    	);
+
+	PcMolecule.style('transform','translate('+xScale(0)+'px,'+yScale(0)+'px)');
+	PcMolecule.style("cursor", "pointer").call(dragMolecule);
+	
+//This code assumes that there is a div element that can be defined inside <div id='divPmap'></div> like this:
+	<div id='divPmap'>
+      <div id='PcMolecule' style='position:absolute;top:-30px;left:-30px;width:60px;height:60px;'>
+        <embed src='images/Pc_molecule.svg' width='60px' height='60px' type="image/svg+xml"></embed>
+      </div>
+    </div>
+
+//Only <object>, <iframe> and <embed> allow for the svg animation to work. See www.schepers.cc/svg/blendups/embedding.html for illustration.
+
+//Notice that in this case, the rotation animation can be implemented just after <g id="Layer_1"> within the svg file like this:
+
+    <animateTransform attributeName="transform" attributeType="XML"
+                    type="rotate" from="0 4 4" to="90 4 4" dur=".1s" begin="Layer_1.mouseenter" end='Layer_1.mouseout'
+                     repeatCount="indefinite"/>
+
+//The problem with this approach is that for some reason, I could not make the molecule draggable
+
+//////////////////////////////////////////////////////////
+
+function gate_ELevels(gate){
+		var levels = ML.map(function(d){return d-gate/1000;});
+
+		ELevels
+			.data(levels)			
+      		.attr('x1',xEnScale(lMargin+bandW+wellW))
+      		.attr('y1',function(d){return yEnScale(d);})
+			.attr('x2',xEnScale(lMargin+bandW+wellW+gapW))
+      		.attr('y2',function(d){return yEnScale(d);});
+	};
+	
+	var ELevels = svgEnergies.selectAll('.ELevel')
+					.data(ML)
+					.enter()
+					.append('line')
+					.attr('class','ELevel');
+
+	gate_ELevels(0);
+
+///////////////////////////////////////////////////////////
+
+atomLocs = d3.range(circles[0].length).filter(function(i){return circles[0][i].attributes.class.value=='adatom';});
+
+
+
