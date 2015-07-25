@@ -76,12 +76,14 @@
 			fill: red;	
 			stroke: rgba(0,0,0,0); /* Make it transparent */
 			stroke-width: 6px; /* Make it big to be able to select it even when click is not exactly on the circle */	
+			cursor: pointer;
 		}
 
 		.adatom {
 			fill: url(#adatomGradient);/*white;*/
 			stroke: black;
 			stroke-width: 0.5px;	
+			cursor: pointer;
 		}
 
 		.profile {
