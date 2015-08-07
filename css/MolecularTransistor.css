@@ -5,6 +5,12 @@
   			font-family:Helvetica;
 		}
 
+		p {
+			margin: 0 auto;
+  			font-size:14pt;
+  			font-family:Helvetica;
+		}
+
 		#author {
 			position:absolute;
 			margin: 0px;

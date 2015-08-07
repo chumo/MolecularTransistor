@@ -78,7 +78,8 @@
       			.attr('x1',xEnScale(lMargin+bandW+2*wellW+gapW))
       			.attr('y1',yEnScale(0))
 				.attr('x2',xEnScale(lMargin+2*bandW+2*wellW+gapW))
-      			.attr('y2',yEnScale(0));
+      			.attr('y2',yEnScale(0))
+      			.style('stroke','#830EAA');
 
       	var dragBias = d3.behavior.drag()
     		.on('drag', applyBias);
