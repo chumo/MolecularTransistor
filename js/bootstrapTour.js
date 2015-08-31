@@ -8,11 +8,23 @@
   			title: "Welcome!",
     		content: "<div style='width:700px;'><p>This is an interactive web application designed to visualize \
         some of the ideas published in <a href='http://dx.doi.org/10.1038/nphys3385' \
-        target='_blank'>this article</a> of the scientific journal Nature Physics.</p>\
+        target='_blank'>this article</a> of the scientific journal Nature Physics.</p></br>\
         <p>An individual <a href='https://en.wikipedia.org/wiki/Phthalocyanine' target='_blank'>phthalocyanine</a> molecule adsorbed on a semiconductor surface \
         (<a href='https://en.wikipedia.org/wiki/Indium_arsenide' target='_blank'>InAs</a>(111)A) acts as a <a href='https://en.wikipedia.org/wiki/Coulomb_blockade#Single-electron_transistor' target='_blank'>\
-        single electron transistor (SET)</a>.</p>\
-        <p>For having such a nanoscale device, the required elements are:</br>\
+        single electron transistor (SET)</a>.</p></br>\
+        <p>The work was partially funded by the German Research Foundation (Collaborative Research Network \
+        <a href='http://www.physik.fu-berlin.de/einrichtungen/sfb/sfb658' target='_blank'>SFB 658</a>),\
+        and this web-app participates in the <a href='http://www.physik.fu-berlin.de/en/einrichtungen/sfb/sfb658/IGK/index.html' target='_blank'>IGK contest</a> of this publicly funded project. \
+        The aim is to impart information about the Sfb 658 to the public.</p>\
+          <div style='text-align:center;'> \
+              <img src='images/SFB658_picture.png' alt='Phthalocyanine molecules' width='150px'> \
+          </div>\
+        <p>Use the arrow keys or the buttons below to walk through this tour.</p></div>"
+      },
+      {
+        orphan: true,
+        title: "Single Electron Transistor",
+        content: "<p>For having such a nanoscale device, the required elements are:</br>\
         <img src='images/circuit.svg' alt='SET circuit' width='250px' style='float:right;'>\
         <ul> \
             <li><strong>A quantum dot</strong> that should be sufficiently small to host a series of quantized energy levels, and sufficiently decoupled from both electrodes \
@@ -24,8 +36,7 @@
             These adatoms are natural electron donors with a charge state +1 (as explained <a href='http://dx.doi.org/10.1088/0953-8984/24/35/354008' target='_blank'>here</a>). \
             This charge is strongly localized due to the low screening of the semiconductor surface, \
             and thus, the local electrostatic potential can be tailored with atomic precission.</li> \
-        </ul></p>\
-        <p>Use the arrow keys or the buttons below to walk through this tour.</p></div>"
+        </ul></p>"
   		},
       {
         element: "#divScene",
