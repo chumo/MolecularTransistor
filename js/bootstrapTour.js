@@ -13,9 +13,10 @@
         (<a href='https://en.wikipedia.org/wiki/Indium_arsenide' target='_blank'>InAs</a>(111)A) acts as a <a href='https://en.wikipedia.org/wiki/Coulomb_blockade#Single-electron_transistor' target='_blank'>\
         single electron transistor (SET)</a>.</p></br>\
         <p>The work was partially funded by the German Research Foundation (Collaborative Research Network \
-        <a href='http://www.physik.fu-berlin.de/einrichtungen/sfb/sfb658' target='_blank'>SFB 658</a>),\
-        and this web-app participates in the <a href='http://www.physik.fu-berlin.de/en/einrichtungen/sfb/sfb658/IGK/index.html' target='_blank'>IGK contest</a> of this publicly funded project. \
-        The aim is to impart information about the Sfb 658 to the public.</p>\
+        <a href='http://www.physik.fu-berlin.de/einrichtungen/sfb/sfb658' target='_blank'>SFB 658</a>).</p></br>\
+        <p>This web-app has been awarded with the <strong>first prize</strong> in the <a href='http://www.physik.fu-berlin.de/en/einrichtungen/sfb/sfb658/IGK/index.html' target='_blank'>IGK contest (2015)</a> \
+        of this publicly funded project. \
+        The aim is to impart information about the Sfb 658 to the general public.</p>\
           <div style='text-align:center;'> \
               <img src='images/SFB658_picture.png' alt='Phthalocyanine molecules' width='150px'> \
           </div>\
@@ -73,7 +74,7 @@
           <img src='images/InAs(111)A_unitCell.png' alt='SET circuit' width='300px'>\
         </div>\
         <p>These vacancy sites (red dots) form a 2D lattice of locations where \
-        indium adatoms can be posibly deposited.</p>\
+        indium adatoms can be possibly deposited.</p>\
         <ul> \
             <li>Deposit an atom at any of the red dots by simply clicking on them. <strong>Try now!</strong></li> \
             <li>Click again on the deposited atom to remove it.</li> \
@@ -91,7 +92,7 @@
         element: "#divEnergies",
         title: "Energy diagram",
         content: "<div style='width:450px;'>In order to have electrons (green circles) flowing from the tip to the surface \
-        or viceversa, two conditions must be fulfilled:\
+        or vice versa, two conditions must be fulfilled:\
         <ol> \
             <li>A bias voltage should be applied to one electrode (for example, the tip) with respect to the other (the surface). \
             This produces the unbalance from which the electrons take the energy to run across the junction. \
